@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+ /* Estilo para el encabezado */
+ .header-bg {
+    background-color: #0693e3;
+    color: white;
+    padding: 30px 0; /* Añadir espacio arriba y abajo */
+}
+/* Estilo para el texto "Inventario Automotriz Nexos" en el encabezado */
+.crud-text {
+    font-size: 36px;
+}
+/* Estilo para el encabezado en dispositivos móviles */
+@media (max-width: 576px) {
+    .crud-text {
+        font-size: 24px;
+    }
+}
+
+
+.btnAnimado{
+z-index: 1;
+border: none;
+display: block;
+text-align: center;
+cursor: pointer;
+text-transform: uppercase;
+outline: none;
+overflow: hidden;
+position: relative;
+color: black;
+font-weight: 700;
+font-size: 15px;
+background-color:white;
+padding: 11px 35px;
+margin: 0 auto;
+box-shadow: 0 5px 20px #ff6900;
+
+}
+
+.btnAnimado span {
+position: relative;
+z-index: 1;
+}
+
+.btnAnimado:after {
+z-index: -1;
+content: "";
+position: absolute;
+left: 0;
+top: 0;
+height: 490%;
+width: 140%;
+color:white;
+background: #ff6900;
+-webkit-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+-webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btnAnimado:hover:after {
+-webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+transform: translateX(-9%) translateY(-25%) rotate(45deg);
+
+color:white;
+}
+.btnAnimado:hover {
+color: white;
+}
+/* Estilo para el footer */
+.footer {
+    background-color: #0693e3;
+    color: white;
+    padding: 20px 0;
+}
